@@ -1,6 +1,7 @@
 /* Global */
 body {
   margin: auto 0;
+  font-family: Arial, sans-serif;
 }
 
 a {
@@ -12,15 +13,24 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 75vh;
 }
 
 /* NAV */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .main-nav {
+
   display: flex;
+  height: 10vh;
+  background: #7abcff;
   list-style: none;
   font-size: 1.25rem;
   margin: 0;
+  z-index: 1;
 }
 
 @media (max-width: 500px) {
@@ -42,6 +52,13 @@ li {
   padding: 20px;
 }
 
+/* Cover */
+.cover {
+  width: 50vw;
+  max-height: 75vh;
+  /* position: relative; */
+}
+
 /* Project Gallery */
 .grid-wrapper {
   display: grid;
@@ -59,17 +76,24 @@ li {
   margin: 20px;
 }
 
+.box:hover {
+    -webkit-transform:rotate(-7deg);
+    -moz-transform:rotate(-7deg);
+    -o-transform:rotate(-7deg);
+    transform:rotate(-7deg);
+}
+
 /* Footer */
 
 .my-footer {
-  font-size: .5em;
+  font-size: 1rem;
   text-align: center;
 }
 
 .zone {
-    cursor:pointer;
+    /* cursor:pointer; */
     color:#FFF;
-    font-size:2em;
+    /* font-size:2em; */
     border-radius:4px;
     border:1px solid #bbb;
     transition: all 0.3s linear;
