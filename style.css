@@ -1,6 +1,20 @@
+/* Global */
 body {
   margin: auto 0;
 }
+
+a {
+  color: #f5f5f6;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
 /* NAV */
 .main-nav {
   display: flex;
@@ -9,7 +23,7 @@ body {
   margin: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .main-nav {
     font-size: 1rem;
   }
@@ -28,10 +42,30 @@ li {
   padding: 20px;
 }
 
-a {
-  color: #f5f5f6;
-  text-decoration: none;
+/* Project Gallery */
+.grid-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
+
+.box > img {
+  width: 100%;
+}
+
+.box {
+  background-color: #444;
+  padding: 120px;
+  margin: 20px;
+}
+
+/* Footer */
+
+.my-footer {
+  font-size: .5em;
+  text-align: center;
+}
+
 .zone {
     cursor:pointer;
     color:#FFF;
@@ -42,10 +76,10 @@ a {
 }
 
 .zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0 5px 15px, inset rgba(0,0,0,0.15) 0 -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0 5px 15px, inset rgba(0,0,0,0.15) 0 -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0 5px 15px, inset rgba(0,0,0,0.15) 0 -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0 5px 15px, inset rgba(0,0,0,0.15) 0 -10px 20px;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
